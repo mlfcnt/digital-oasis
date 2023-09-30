@@ -1,6 +1,6 @@
 // lib/api.ts
 import fs from "fs";
-import matter from "gray-matter";
+import matter from "@gr2m/gray-matter";
 import { join } from "path";
 import { unified } from "unified";
 import remarkGfm from "remark-gfm";

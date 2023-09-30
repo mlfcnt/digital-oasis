@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@leafac/rehype-shiki": "^2.2.1",
-    "gray-matter": "^4.0.3",
+    "@gr2m/gray-matter": "^4.0.3-with-pr-137",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",

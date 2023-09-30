@@ -11,6 +11,8 @@ import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
 import rehypeShiki from "@leafac/rehype-shiki";
 import * as shiki from "shiki";
+import getConfig from "next/config";
+const { serverRuntimeConfig } = getConfig();
 
 // memoize/cache the creation of the markdown parser, this sped up the
 // building of the blog from ~60s->~10s
@@ -54,9 +56,14 @@ function getParser() {
 
 export async function getStayById(id: string) {
   const realId = id.replace(/\.md$/, "");
-  const fullPath = join("_stays", `${realId}.md`);
+  const fullPath = join(
+    serverRuntimeConfig.PROJECT_ROOT,
+    "_stays",
+    `${realId}.md`
+  );
+  console.log({ fullPath });
   const { data, content } = matter(
-    await fs.promises.readFile(fullPath, "utf8")
+    await fs.promises.readFile(join(fullPath), "utf8")
   );
 
   const parser = await getParser();

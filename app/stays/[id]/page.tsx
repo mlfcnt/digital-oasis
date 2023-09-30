@@ -1,6 +1,7 @@
 // Set the title of the page to be the stay title, note that we no longer use
 
 import { getAllStays, getStayById } from "@/lib/api";
+import Link from "next/link";
 
 // e.g. next/head in app dir
 export async function generateMetadata({
@@ -26,10 +27,17 @@ export default async function Stay({
 }) {
   const { html, title, date } = await getStayById(id);
   return (
-    <article>
-      <h1>{title}</h1>
-      <h4>{date}</h4>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-    </article>
+    <div>
+      <div className="mb-4 text-2xl">
+        <Link href={"/"}>{"Digital Oasis"}</Link>
+      </div>
+      <article className="flex flex-1">
+        <h1 className={"text-4xl mb-8 text-center"}>{title}</h1>
+        <div
+          dangerouslySetInnerHTML={{ __html: html }}
+          className="text-lg mx-24"
+        />
+      </article>
+    </div>
   );
 }

@@ -6,19 +6,19 @@ export default async function Home() {
   return (
     <div>
       <div>
-        <h1>Digital Oasis</h1>
-
-        <h2>All stays:</h2>
-        <ul>
-          {stays.map((stay) => {
-            const { title, id } = stay;
-            return (
-              <li key={id}>
-                <Link href={`/stays/${id}`}>{title}</Link>
-              </li>
-            );
-          })}
-        </ul>
+        <h1 className="mb-4 text-2xl font-semibold">Digital Oasis</h1>
+        <div className="flex flex-1">
+          <ul>
+            {stays.map((stay) => {
+              const { title, id } = stay;
+              return (
+                <li key={id} className="text-lg">
+                  <Link href={`/stays/${id}`}>{title}</Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </div>
   );

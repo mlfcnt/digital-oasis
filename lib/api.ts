@@ -17,26 +17,29 @@ import * as shiki from "shiki";
 let p: ReturnType<typeof getParserPre> | undefined;
 
 async function getParserPre() {
-  return unified()
-    .use(remarkParse)
-    .use(remarkRehype)
-    .use(remarkGfm)
-    .use(rehypeShiki, {
-      highlighter: await shiki.getHighlighter({ theme: "poimandres" }),
-    })
-    .use(rehypeStringify)
-    .use(rehypeSlug)
-    .use(rehypeAutolinkHeadings, {
-      content: (arg) => ({
-        type: "element",
-        tagName: "a",
-        properties: {
-          href: "#" + arg.properties?.id,
-          style: "margin-right: 10px",
-        },
-        children: [{ type: "text", value: "#" }],
-      }),
-    });
+  return (
+    unified()
+      .use(remarkParse)
+      .use(remarkRehype)
+      .use(remarkGfm)
+      //@ts-ignore
+      .use(rehypeShiki, {
+        highlighter: await shiki.getHighlighter({ theme: "poimandres" }),
+      })
+      .use(rehypeStringify)
+      .use(rehypeSlug)
+      .use(rehypeAutolinkHeadings, {
+        content: (arg) => ({
+          type: "element",
+          tagName: "a",
+          properties: {
+            href: "#" + arg.properties?.id,
+            style: "margin-right: 10px",
+          },
+          children: [{ type: "text", value: "#" }],
+        }),
+      })
+  );
 }
 
 function getParser() {

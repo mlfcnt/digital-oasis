@@ -2,7 +2,7 @@
 title: Chambéry
 date: 2023-04-08
 highlight: true
-image: images/stays/chambery.webp
+image: /images/stays/chambery.webp
 ---
 
 **Chambéry** : _Votre évasion dans les Alpes françaises_, est une destination captivante pour les travailleurs à distance. Son infrastructure pour le télétravail comprend une connexion Internet fiable et des espaces de coworking confortables, offrant un environnement idéal pour la productivité. Mais ce n'est que le début.

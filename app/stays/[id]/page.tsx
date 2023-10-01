@@ -32,7 +32,7 @@ export default async function Stay({ params }: { params: { id: string } }) {
           />
           <Image
             className="m-auto my-12"
-            alt={`Image of ${image}`}
+            alt={`Image of ${title}`}
             src={image}
             height={1000}
             width={1000}

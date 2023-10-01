@@ -2,7 +2,7 @@
 title: Paris
 date: 2023-04-08
 highlight: true
-image: images/stays/paris.webp
+image: /images/stays/paris.webp
 ---
 
 **Paris** : _La Ville Lumière_, est une destination enchanteresse pour les travailleurs à distance. Son infrastructure pour le télétravail comprend une connexion Internet fiable et des espaces de coworking confortables, offrant un environnement idéal pour la productivité. Mais ce n'est que le début.

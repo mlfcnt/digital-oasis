@@ -2,7 +2,7 @@
 title: Prague
 date: 2023-04-08
 highlight: true
-image: images/stays/prague.webp
+image: /images/stays/prague.webp
 ---
 
 **Prague** : _Le cœur de l'Europe_, est une destination envoûtante pour les travailleurs à distance. Son infrastructure pour le télétravail comprend une connexion Internet haut débit et des espaces de coworking confortables, assurant un environnement idéal pour la productivité. Mais ce n'est que le début.

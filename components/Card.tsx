@@ -1,3 +1,5 @@
+"use client";
+
 import { Paper, Text, Title, Button } from "@mantine/core";
 import classes from "./CardsCarousel.module.css";
 import Link from "next/link";

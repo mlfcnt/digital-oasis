@@ -1,5 +1,3 @@
-// Set the title of the page to be the stay title, note that we no longer use
-
 import { getAllStays, getStayById } from "@/lib/api";
 import Image from "next/image";
 import Link from "next/link";

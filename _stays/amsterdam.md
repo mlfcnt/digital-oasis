@@ -2,7 +2,7 @@
 title: Amsterdam
 date: 2023-04-08
 highlight: true
-image: https://images.unsplash.com/photo-1605101100278-5d1deb2b6498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80
+image: images/stays/amsterdam.webp
 ---
 
 **Amsterdam** : _La Venise du Nord_, est une destination captivante pour les travailleurs à distance. Son infrastructure pour le télétravail comprend une connexion Internet haut débit et de nombreux espaces de coworking, offrant un environnement idéal pour la productivité. Mais cela ne s'arrête pas là.

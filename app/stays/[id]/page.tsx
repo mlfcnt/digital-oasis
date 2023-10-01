@@ -1,6 +1,7 @@
 // Set the title of the page to be the stay title, note that we no longer use
 
 import { getAllStays, getStayById } from "@/lib/api";
+import Image from "next/image";
 import Link from "next/link";
 
 // e.g. next/head in app dir
@@ -25,18 +26,24 @@ export default async function Stay({
 }: {
   params: { id: string };
 }) {
-  const { html, title, date } = await getStayById(id);
+  const { html, title, image } = await getStayById(id);
   return (
     <div>
-      <div className="mb-4 text-2xl">
-        <Link href={"/"}>{"Digital Oasis"}</Link>
-      </div>
       <article className="flex flex-1">
         <h1 className={"text-4xl mb-8 text-center"}>{title}</h1>
-        <div
-          dangerouslySetInnerHTML={{ __html: html }}
-          className="text-lg mx-24"
-        />
+        <div>
+          <div
+            dangerouslySetInnerHTML={{ __html: html }}
+            className="text-lg mx-24"
+          />
+          <Image
+            className="m-auto my-12"
+            alt={`Image of ${image}`}
+            src={image}
+            height={1000}
+            width={1000}
+          />
+        </div>
       </article>
     </div>
   );

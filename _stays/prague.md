@@ -1,14 +1,16 @@
 ---
 title: Prague
 date: 2023-04-08
+highlight: true
+image: https://images.unsplash.com/photo-1564511287568-54483b52a35e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80
 ---
 
-**Prague**: _The Heart of Europe_, is an enchanting destination for remote workers. Its infrastructure for remote work includes high-speed internet and cozy co-working spaces, ensuring a productive environment. But that's just the beginning.
+**Prague** : _Le cœur de l'Europe_, est une destination envoûtante pour les travailleurs à distance. Son infrastructure pour le télétravail comprend une connexion Internet haut débit et des espaces de coworking confortables, assurant un environnement idéal pour la productivité. Mais ce n'est que le début.
 
-Prague offers an outstanding _quality of life_, with a mix of history and modernity, charming cobblestone streets, and a vibrant cultural scene. Enjoy a continental climate and the beauty of the Vltava River. Dive into the rich culture, including Gothic and Baroque architecture, renowned art galleries, and lively festivals.
+Prague offre une qualité de vie exceptionnelle, mêlant histoire et modernité, des rues pavées charmantes et une scène culturelle vibrante. Profitez d'un climat continental et de la beauté de la Vltava. Plongez dans la riche culture de la ville, avec son architecture gothique et baroque, ses galeries d'art de renommée mondiale et ses festivals animés.
 
-You'll find a welcoming community of digital nomads, and while Czech is the local language, many locals speak _English_.
+Vous trouverez une communauté accueillante de nomades numériques, et bien que le tchèque soit la langue locale, de nombreux habitants parlent anglais.
 
-Prague is also known for its affordability, offering reasonable living costs and efficient public transportation. Safety is a priority, providing a secure environment for both work and leisure.
+Prague est également connue pour son coût de la vie abordable, avec des frais de logement raisonnables et des transports publics efficaces. La sécurité est une priorité, offrant un environnement sûr pour le travail et les loisirs.
 
-In **Prague**, you can experience a harmonious blend of work and exploration, making it an ideal destination for remote workers.
+À **Prague**, vous pouvez trouver le parfait équilibre entre le travail et l'exploration, ce qui en fait une destination idéale pour les travailleurs à distance à la recherche de la beauté de la ville au cœur de l'Europe.

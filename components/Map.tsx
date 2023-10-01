@@ -1,6 +1,12 @@
 "use client";
 
-import Mapbox, { CircleLayer, Layer, Source } from "react-map-gl";
+import Mapbox, {
+  CircleLayer,
+  GeolocateControl,
+  Layer,
+  NavigationControl,
+  Source,
+} from "react-map-gl";
 
 export const Map = () => {
   const geojson: any = {
@@ -52,10 +58,13 @@ export const Map = () => {
       }}
       style={{ width: "90%", height: 800, margin: "auto" }}
       mapStyle="mapbox://styles/mapbox/streets-v9"
+      scrollZoom={false}
     >
       <Source id="my-data" type="geojson" data={geojson}>
         <Layer {...layerStyle} />
       </Source>
+      <NavigationControl />
+      <GeolocateControl />
     </Mapbox>
   );
 };

@@ -6,7 +6,7 @@ export const Comments = () => {
     <div>
       <h3 className="text-2xl mt-24 mb-6">Avis de la communauté</h3>
 
-      <div className="mb-28 flex flex-wrap">
+      <div className="mb-28 flex flex-wrap justify-between">
         <Comment
           text="J'adore Digital Oasis ! Grâce à eux, j'ai pu planifier mon
           voyage en train à travers la France en toute simplicité. Une
@@ -32,17 +32,11 @@ export const Comments = () => {
 
 const Comment = ({ text, userName }: { text: string; userName: string }) => {
   return (
-    <Card
-      shadow="sm"
-      padding="lg"
-      radius="md"
-      withBorder
-      className="max-w-lg m-4"
-    >
-      <Group justify="space-between">
-        <Text fw={500}>{userName}</Text>
-      </Group>
-      <blockquote className="mt-2 italic text-slate-900">{text}</blockquote>
-    </Card>
+    <div className="shadow-sm p-4 rounded-md border max-w-lg m-4">
+      <div className="flex justify-between">
+        <h2 className="font-medium font-bold">{userName}</h2>
+      </div>
+      <blockquote className="mt-2 italic">{text}</blockquote>
+    </div>
   );
 };

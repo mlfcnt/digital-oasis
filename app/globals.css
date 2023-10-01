@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html,
+header,
+body,
+main {
+    background-color: #004643;
+    font-size: 105%;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    color: #fffffe;
+}
+
+p,
+blockquote {
+    color: #abd1c6;
+}
+
+button {
+    background-color: #f9bc60;
+    color: #001e1d;
+}

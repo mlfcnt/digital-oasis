@@ -11,14 +11,11 @@
   "dependencies": {
     "@gr2m/gray-matter": "^4.0.3-with-pr-137",
     "@leafac/rehype-shiki": "^2.2.1",
-    "@mantine/carousel": "^7.1.0",
-    "@mantine/core": "^7.1.0",
-    "@mantine/hooks": "^7.1.0",
     "@types/mapbox-gl": "^2.7.15",
+    "embla-carousel-autoplay": "^8.0.0-rc14",
     "embla-carousel-react": "^8.0.0-rc14",
     "mapbox-gl": "^2.15.0",
     "next": "latest",
-    "postcss-preset-mantine": "^1.7.0",
     "postcss-simple-vars": "^7.0.1",
     "react": "latest",
     "react-dom": "latest",
@@ -33,14 +30,14 @@
     "unified": "^11.0.3"
   },
   "devDependencies": {
-    "typescript": "latest",
-    "@types/react": "latest",
     "@types/node": "latest",
+    "@types/react": "latest",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
     "postcss": "latest",
     "tailwindcss": "latest",
-    "eslint": "latest",
-    "eslint-config-next": "latest"
+    "typescript": "latest"
   }
 }

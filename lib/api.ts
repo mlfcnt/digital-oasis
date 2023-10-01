@@ -66,11 +66,7 @@ function getParser() {
 
 export const getStayById = async (id: string): Promise<Stay> => {
   const realId = id.replace(/\.md$/, "");
-  const fullPath = join(
-    serverRuntimeConfig.PROJECT_ROOT,
-    "_stays",
-    `${realId}.md`
-  );
+  const fullPath = join(process.cwd(), "_stays", `${realId}.md`);
   const { data, content } = matter(fs.readFileSync(join(fullPath), "utf8"));
 
   const parser = await getParser();

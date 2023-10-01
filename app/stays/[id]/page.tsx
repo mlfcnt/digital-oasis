@@ -21,12 +21,8 @@ type Stay = {
   date: string;
 };
 
-export default async function Stay({
-  params: { id },
-}: {
-  params: { id: string };
-}) {
-  const { html, title, image } = await getStayById(id);
+export default async function Stay({ params }: { params: { id: string } }) {
+  const { html, title, image } = await getStayById(params.id);
   return (
     <div>
       <article className="flex flex-1">
@@ -48,3 +44,11 @@ export default async function Stay({
     </div>
   );
 }
+
+export const generateStaticParams = async () => {
+  const stays = await getAllStays();
+
+  return stays.map((stay) => ({
+    id: stay.id,
+  }));
+};
